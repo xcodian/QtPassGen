@@ -10,6 +10,9 @@ class mainWindow(QtGui.QWidget):
         self.setMinimumSize(320, 600)
         self.resize(320, 600)
 
+        self.setWindowTitle("Password Generator")
+        self.setWindowIcon(self.style().standardIcon(QtGui.QStyle.SP_CommandLink))
+
         self.frame = QtGui.QVBoxLayout(self)
         self.frame.setContentsMargins(0, 0, 0, 0)
         self.frame.setSpacing(0)
