@@ -91,7 +91,7 @@ class mainWindow(QtGui.QWidget):
             for j in xrange(self.pass_length.value()):
                 password += rndchoice(self.accepted_char_edit.toPlainText())
 
-            self.output_edit.setText(self.output_edit.toPlainText() + password + "\n")
+            self.output_edit.setText(self.output_edit.toPlainText() + password + ("\n" * 2))
 
 
 if __name__ == '__main__':
